@@ -71,7 +71,8 @@ class Window:
                 self.cell_button[k].grid(column=j, row=i )
                 k += 1
 
-    def refresh_button(self):
+    def refresh_button(self, settings):
+        self.SETTINGS = settings
         for button in self.cell_button:
             button['text'] = ''
             button['state'] = tk.NORMAL
